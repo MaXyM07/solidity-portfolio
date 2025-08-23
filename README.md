@@ -1,17 +1,21 @@
 # Solidity Portfolio  
 
-This repository contains a collection of Solidity smart contract projects I’ve built to improve my skills and showcase in my developer portfolio.  
+This repository contains a collection of my Solidity smart contract projects.  
+The goal of this portfolio is to showcase my skills as a blockchain developer and demonstrate practical examples of smart contract development.  
 
-## Projects Included  
-- Functions Example (basic Solidity functions)  
-- Functions Example Pro Extended (advanced return values and storage/memory examples)  
-- More projects coming soon...  
+##  Projects Included
+- **FunctionsExampleProExtended** – Example contract with variables, mappings, arrays and simple logic in Solidity.  
+- More projects will be added soon (ERC20, ERC721, DeFi examples, etc.).  
 
-## Technologies Used  
-- Solidity  
-- Hardhat  
-- Remix IDE  
+##  Tools & Tech
+- Solidity
+- Hardhat / Remix IDE
+- Git & GitHub  
 
-## About Me  
-I’m a blockchain enthusiast learning Web3 development and building real smart contracts to practice and prepare for freelance work.  
+##  About Me
+I am learning and building blockchain applications with a focus on Solidity smart contracts.  
+This portfolio will continue to grow as I add more projects.  
+
+---
+ Feel free to explore the code and follow this repository for updates!
 
