@@ -1,0 +1,22 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract FunctionsExampleProExtended {
+    uint256 private value;
+
+    function setValue(uint256 _value) public {
+        value = _value;
+    }
+
+    function getValue() public view returns (uint256) {
+        return value;
+    }
+
+    function doubleValue() public view returns (uint256) {
+        return value * 2;
+    }
+
+    function resetValue() public {
+        value = 0;
+    }
+}
