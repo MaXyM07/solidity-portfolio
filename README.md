@@ -1,21 +1,67 @@
-# Solidity Portfolio  
+# Solidity Portfolio
 
-This repository contains a collection of my Solidity smart contract projects.  
-The goal of this portfolio is to showcase my skills as a blockchain developer and demonstrate practical examples of smart contract development.  
-
-##  Projects Included
-- **FunctionsExampleProExtended** – Example contract with variables, mappings, arrays and simple logic in Solidity.  
-- More projects will be added soon (ERC20, ERC721, DeFi examples, etc.).  
-
-##  Tools & Tech
-- Solidity
-- Hardhat / Remix IDE
-- Git & GitHub  
-
-##  About Me
-I am learning and building blockchain applications with a focus on Solidity smart contracts.  
-This portfolio will continue to grow as I add more projects.  
+This repository contains simple smart contracts written in Solidity.  
+It is meant to serve as a portfolio to showcase my skills in blockchain and smart contract development.
 
 ---
- Feel free to explore the code and follow this repository for updates!
 
+## 📂 Contracts
+
+### 1. SimpleStorage.sol
+A basic contract that allows storing and retrieving a single unsigned integer value.
+```solidity
+pragma solidity ^0.8.0;
+
+contract SimpleStorage {
+    uint256 private storedValue;
+
+    function set(uint256 _value) public {
+        storedValue = _value;
+    }
+
+    function get() public view returns (uint256) {
+        return storedValue;
+    }
+}
+
+pragma solidity ^0.8.0;
+
+contract Counter {
+    uint256 private count;
+
+    function increment() public {
+        count += 1;
+    }
+
+    function decrement() public {
+        require(count > 0, "Counter cannot go below zero");
+        count -= 1;
+    }
+
+    function getCount() public view returns (uint256) {
+        return count;
+    }
+}
+
+
+pragma solidity ^0.8.0;
+
+contract FunctionsExampleProExtended {
+    uint256 private value;
+
+    function setValue(uint256 _value) public {
+        value = _value;
+    }
+
+    function getValue() public view returns (uint256) {
+        return value;
+    }
+
+    function doubleValue() public view returns (uint256) {
+        return value * 2;
+    }
+
+    function resetValue() public {
+        value = 0;
+    }
+}
